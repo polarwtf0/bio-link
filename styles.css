@@ -1,0 +1,103 @@
+ :root {
+     --box-shadow: 0 1px 2px 0 #ffffff40;
+     --clr-surface: rgba(0, 0, 0, 0.25);
+     --clr-text: #ffffff;
+     --_radius: 40px;
+     --_padding: 0.5em;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ html,
+ body {
+     height: 100%;
+     overflow: hidden;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-family: "Satoshi", sans-serif;
+     background: url("assets/kirby.jpg") center / cover no-repeat;
+     backdrop-filter: blur(30px);
+     -webkit-backdrop-filter: blur(30px);
+     color: var(--clr-text);
+ }
+
+ body>*+* {
+     margin-top: 0.5em;
+ }
+
+ .card {
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+     padding: var(--_padding);
+     min-width: min(400px, 80vw);
+     background: var(--clr-surface);
+     backdrop-filter: blur(15px);
+     -webkit-backdrop-filter: blur(15px);
+     border-radius: var(--_radius);
+     box-shadow: var(--box-shadow);
+ }
+
+ .info-card {
+     padding: var(--_padding);
+     min-width: min(400px, 80vw);
+     background: var(--clr-surface);
+     backdrop-filter: blur(15px);
+     -webkit-backdrop-filter: blur(15px);
+     border-radius: var(--_radius);
+     box-shadow: var(--box-shadow);
+ }
+
+ .pfp {
+     width: 8em;
+     height: 8em;
+     border-radius: calc(var(--_radius) - var(--_padding));
+     box-shadow: var(--box-shadow);
+ }
+
+ .info {
+     display: block;
+ }
+
+ .info h1 {
+     font-size: 2.5em;
+ }
+
+ .info p {
+     font-size: 1.325em;
+     opacity: 0.5;
+ }
+
+ .logo-card {
+     display: flex;
+
+ }
+
+ .logo-container {
+     display: flex;
+     text-decoration: none;
+     gap: 10px;
+ }
+
+ .logo-container a {
+     text-decoration: none;
+ }
+
+ .logo {
+     margin-top: 0.6em;
+     width: 1.5em;
+     height: 1.5em;
+     cursor: pointer;
+ }
+
+ .text-center {
+     text-align: center;
+ }
