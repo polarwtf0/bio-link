@@ -23,7 +23,7 @@
      align-items: center;
      flex-direction: column;
      font-family: "Satoshi", sans-serif;
-     background: url("assets/kirby.jpg") center / cover no-repeat;
+     background: url("assets/cat.png") center / cover no-repeat;
      backdrop-filter: blur(30px);
      -webkit-backdrop-filter: blur(30px);
      color: var(--clr-text);
